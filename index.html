@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FMG Interior Architecture</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500&family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    /* Hide the default cursor everywhere */
+    body, a, button, input, textarea, select, label {
+      cursor: none;
+    }
+
+    /* Custom cursor styles */
+    .custom-cursor {
+      position: fixed;
+      width: 40px;
+      height: 40px;
+      background: url('/src/curser.png') no-repeat center center;
+      background-size: contain;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+  </style>
+</head>
+<body class="bg-primary">
+<div id="root"></div>
+
+<!-- Custom cursor element -->
+<div id="custom-cursor" class="custom-cursor"></div>
+
+<script>
+  // Custom cursor script
+  const cursor = document.getElementById('custom-cursor');
+
+  // Update cursor position on mousemove
+  document.addEventListener('mousemove', (event) => {
+    cursor.style.left = `${event.pageX}px`;
+    cursor.style.top = `${event.pageY}px`;
+  });
+
+  // Optional: Change cursor size on click
+  document.addEventListener('mousedown', () => {
+    cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
+  });
+  document.addEventListener('mouseup', () => {
+    cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+  });
+
+  // Add hover effect for clickable elements
+  document.querySelectorAll('a, button, input, textarea, select, label').forEach((el) => {
+    el.addEventListener('mouseenter', () => {
+      cursor.style.transform = 'translate(-50%, -50%) rotate(90deg)';
+    });
+    el.addEventListener('mouseleave', () => {
+      cursor.style.transform = 'translate(-50%, -50%)';
+    });
+  });
+</script>
+<script type="module" src="/src/main.tsx"></script>
+</body>
+</html>

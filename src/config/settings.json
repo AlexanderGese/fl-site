@@ -1,0 +1,82 @@
+{
+  "theme": {
+    "colors": {
+      "background": "#FFFFFF",
+      "primary": "#1A1A1A",
+      "secondary": "#F5F5F5",
+      "beige": "#F0CBBB",
+      "gold": "#BFA380",
+      "offwhite": "#E9E5E4",
+      "darkgray": "#6A6667"
+    },
+    "fonts": {
+      "heading": "Montserrat",
+      "body": "Roboto",
+      "caption": "Lato"
+    }
+  },
+  "branding": {
+    "logo": {
+      "text": "FMG Interior Architecture",
+      "icon": ""
+    },
+    "slogan": {
+      "main": "Interior architecture & design",
+      "sub": "Dubai - Paris"
+    }
+  },
+  "slideshow": {
+    "interval": 50,
+    "slides": [
+      {
+        "image": "https://i.ibb.co/kB6dhMj/Untitled-design-4.png",
+        "alt": "Logo"
+      },
+      {
+        "image": "https://i.imgur.com/GQMSWpx.jpeg",
+        "alt": "Modern Architecture"
+      },
+      {
+        "image": "https://i.imgur.com/XIe6IOU.jpeg",
+        "alt": "Modern Architecture"
+      },
+      {
+        "image": "https://i.imgur.com/a7oUE9o.jpeg",
+        "alt": "Modern Architecture"
+      },
+      {
+        "image": "https://i.imgur.com/DckGA9b.jpeg",
+        "alt": "Contemporary Design"
+      }
+    ]
+  },
+
+  "footer": {
+    "legal": {
+      "copyright": "© 2025 FMGInteriorArchitecture. All rights reserved.",
+      "links": [
+        {
+          "text": "Privacy Policy",
+          "url": "/privacy"
+        },
+        {
+          "text": "Terms of Service",
+          "url": "/terms"
+        },
+        {
+          "text": "Cookie Policy",
+          "url": "/cookies"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "email": "florence@fmginteriorarchticture.com",
+    "phone": "(+971) 50 467 8006",
+    "address": "Downtown Dubai",
+    "social": {
+      "instagram": "https://instagram.com/florence_maya_gonot",
+      "linkedin": "https://linkedin.com/in/florencegonot"
+    }
+  }
+}
